@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="10dp"
+    android:layout_marginStart="10dp"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingEnd="5dp"
+        android:paddingStart="5dp">
+
+        <TextView
+android:fontFamily="@font/creem_font"
+            android:id="@+id/timeTxtView"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="08:23"
+            android:textColor="#010000"
+            android:textSize="@dimen/txt_size_18"
+            android:tag="@string/robotoRegular" />
+
+        <TextView
+android:fontFamily="@font/creem_font"
+            android:id="@+id/amPmTxtView"
+            android:layout_width="25dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="AM"
+            android:textColor="#a0a0a0"
+            android:textSize="@dimen/txt_size_14"
+            android:tag="@string/robotoRegular" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/timeLineContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/topView"
+            android:layout_width="4dp"
+            android:layout_height="0dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:background="@color/appThemeColor_1" />
+
+        <RelativeLayout
+            android:id="@+id/imgContainerView"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="-5dp"
+            android:layout_weight="0"
+            android:gravity="center"
+            android:padding="4dp">
+
+            <ImageView
+                android:id="@+id/statusImgView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/bottomView"
+            android:layout_width="4dp"
+            android:layout_height="0dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:background="@color/appThemeColor_1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:id="@+id/containerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+
+            <TextView
+android:fontFamily="@font/creem_font"
+                android:id="@+id/titleTxtView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="start|center_vertical"
+                android:text="PickUp Order"
+                android:textAlignment="viewStart"
+                android:textColor="#000000"
+                android:textSize="@dimen/txt_size_16"
+                android:tag="@string/robotoRegular" />
+
+            <ImageView
+                android:id="@+id/callImgView"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0"
+                android:src="@mipmap/ic_phone"
+                android:tint="@color/appThemeColor_1"
+                android:visibility="gone" />
+        </LinearLayout>
+
+
+        <TextView
+android:fontFamily="@font/creem_font"
+            android:id="@+id/contentTxtView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="start|center_vertical"
+            android:text="Mark Bruno is on way to deliver order"
+            android:textAlignment="viewStart"
+            android:textColor="#666666"
+            android:textSize="@dimen/txt_size_12"
+            android:tag="@string/robotoRegular" />
+    </LinearLayout>
+
+</LinearLayout>

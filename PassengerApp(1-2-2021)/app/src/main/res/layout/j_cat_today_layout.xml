@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    android:id="@+id/contentArea"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:gravity="center"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/catImgView"
+        android:layout_width="@dimen/_45sdp"
+        android:layout_height="@dimen/_45sdp"
+        android:background="@drawable/square_round_shape"
+        android:padding="@dimen/_5sdp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/ic_no_icon" />
+
+    <TextView
+android:fontFamily="@font/creem_font"
+        android:id="@+id/uberXCatNameTxtView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_marginTop="4dp"
+        android:gravity="center|top"
+        android:maxLines="2"
+        android:textColor="#000000"
+        android:textSize="@dimen/txt_size_14"
+        app:autoSizeMaxTextSize="14sp"
+        app:autoSizeMinTextSize="8sp"
+        app:autoSizeStepGranularity="2sp"
+        app:autoSizeTextType="uniform" />
+
+</LinearLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/contentArea"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+
+    android:orientation="vertical"
+    android:paddingEnd="@dimen/_5sdp">
+
+    <ImageView
+        android:id="@+id/catImgView"
+        android:layout_width="@dimen/_45sdp"
+        android:layout_height="@dimen/_45sdp"
+        android:layout_centerVertical="true"
+        android:layout_margin="@dimen/_5sdp"
+        android:background="@drawable/square_round_shape"
+        android:padding="@dimen/_5sdp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/ic_no_icon" />
+
+    <TextView
+
+        android:id="@+id/uberXCatNameTxtView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_toEndOf="@id/catImgView"
+        android:ellipsize="end"
+        android:gravity="start|center"
+        android:maxLines="1"
+        android:fontFamily="@font/creem_font"
+        android:text="Food Delivery"
+        android:textColor="@color/multi_tab_light_color"
+        android:textSize="@dimen/_13sdp"
+        android:textStyle="normal" />
+
+    <TextView
+        android:id="@+id/uberXCatDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/uberXCatNameTxtView"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_toEndOf="@id/catImgView"
+        android:ellipsize="end"
+        android:gravity="start|top"
+        android:maxLines="2"
+        android:tag="Description Empty"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_13sdp"
+        android:visibility="invisible"
+        app:autoSizeMaxTextSize="14sp"
+        app:autoSizeMinTextSize="8sp"
+        app:autoSizeStepGranularity="2sp"
+        app:autoSizeTextType="uniform" />
+
+</RelativeLayout>

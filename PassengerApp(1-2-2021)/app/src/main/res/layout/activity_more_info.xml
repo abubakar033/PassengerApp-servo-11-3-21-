@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MoreInfoActivity">
+
+    <include
+        android:id="@+id/toolbar_include"
+        layout="@layout/design_toolbar_general" />
+
+    <LinearLayout
+        android:id="@+id/providerInfoArea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar_include"
+
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+
+            android:layout_marginBottom="2dp"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/driverImgArea"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center">
+
+            <com.view.SelectableRoundedImageView
+                android:id="@+id/bottomViewdriverImgView"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center|top"
+                android:layout_marginStart="10dp"
+                android:layout_marginBottom="5dp"
+                android:scaleType="centerCrop"
+                app:sriv_border_color="@color/appThemeColor_1"
+                app:sriv_border_width="2dip"
+                app:sriv_left_bottom_corner_radius="20dip"
+                app:sriv_left_top_corner_radius="20dip"
+                app:sriv_oval="true"
+                app:sriv_right_bottom_corner_radius="20dip"
+                app:sriv_right_top_corner_radius="20dip" />
+                <ImageView
+
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="-3dp"
+                    android:layout_marginEnd="-3dp"
+                    android:layout_marginBottom="7dp"
+                    android:tint="@color/white"
+                    app:srcCompat="@drawable/ic_dot" />
+
+                <ImageView
+                    android:id="@+id/driverStatus"
+
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="10dp"
+                    android:tint="@color/appThemeColor_1"
+                    app:srcCompat="@drawable/ic_dot" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="15dp"
+                android:orientation="vertical">
+
+                <TextView
+android:fontFamily="@font/creem_font"
+                    android:id="@+id/bottomViewnameTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@id/seperationLine"
+                    android:gravity="start|center"
+                    android:maxLines="1"
+                    android:text=""
+                    android:textAlignment="viewStart"
+                    android:textColor="#464646"
+                    android:textSize="@dimen/txt_size_18"
+                    android:textStyle="normal" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.view.simpleratingbar.SimpleRatingBar
+                        android:id="@+id/bottomViewratingBar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_marginStart="-3dp"
+                        android:padding="2dp"
+                        app:SRB_fillColor="@color/appThemeColor_1"
+                        app:SRB_isIndicator="true"
+                        app:SRB_numberOfStars="5"
+                        app:SRB_starBackgroundColor="@color/gray_holo_light"
+                        app:SRB_starSize="18sp"
+                        app:SRB_stepSize="0.5" />
+
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:visibility="visible">
+
+                    <TextView
+android:fontFamily="@font/creem_font"
+                        android:id="@+id/bottomViewDescTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+
+                        android:background="@color/appThemeColor_1"
+                        android:gravity="start"
+                        android:paddingStart="10dp"
+                        android:paddingTop="5dp"
+                        android:paddingEnd="10dp"
+                        android:paddingBottom="5dp"
+                        android:text=""
+                        android:textAlignment="viewStart"
+                        android:textAllCaps="true"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/txt_size_14"
+                        android:textStyle="normal" />
+
+                    <TextView
+android:fontFamily="@font/creem_font"
+                        android:id="@+id/bottomViewpriceTxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="10dp"
+                        android:layout_toEndOf="@id/seperationLine"
+                        android:gravity="end"
+                        android:maxLines="1"
+                        android:text="$ 200"
+                        android:textAlignment="viewEnd"
+                        android:textColor="@color/appThemeColor_1"
+                        android:textSize="@dimen/txt_size_16"
+                        android:textStyle="normal"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <com.view.MaterialTabs
+        android:id="@+id/material_tabs"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/providerInfoArea"
+        android:layout_gravity="start"
+        android:background="#ffffff"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        app:mtIndicatorColor="@color/black"
+        app:mtIndicatorHeight="0dp"
+        app:mtPaddingMiddle="false"
+        app:mtSameWeightTabs="true"
+        app:mtTabChangeBG="true"
+        app:mtTabPaddingLeftRight="0dp"
+        app:mtTabSelectedBG="#878787"
+        app:mtTabUnSelectedBG="#dadada"
+        app:mtTextColorSelected="#FFFFFF"
+        app:mtTextColorUnSelected="#878787" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottomCartView"
+        android:layout_below="@+id/material_tabs"
+        android:layout_weight="1"
+        tools:context=".MyBookingsActivity" />
+
+    <RelativeLayout
+        android:id="@+id/bottomCartView"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/appThemeColor_1"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+android:fontFamily="@font/creem_font"
+            android:id="@+id/itemNpricecartTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:clickable="false"
+            android:gravity="center_vertical|start"
+            android:maxLines="2"
+            android:paddingStart="10dp"
+            android:text=""
+            android:textAlignment="viewStart"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:tag="@string/robotobold" />
+
+        <TextView
+android:fontFamily="@font/creem_font"
+            android:id="@+id/viewCartTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:clickable="false"
+            android:gravity="center_vertical|start"
+            android:maxLines="1"
+            android:text=""
+            android:textAlignment="viewStart"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:tag="@string/robotobold" />
+
+
+        <com.view.CounterFab
+            android:id="@+id/cartView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:padding="7dp"
+            android:textSize="6sp"
+            android:tint="@color/white"
+            android:visibility="visible"
+            app:backgroundTint="@android:color/transparent"
+            app:borderWidth="0dp"
+            app:elevation="0dp"
+            app:fabSize="mini"
+
+            app:rippleColor="@android:color/transparent"
+            app:srcCompat="@drawable/ic_cart" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/carouselContainerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#c0000000" />
+
+        <com.view.carouselview.CarouselView
+            android:id="@+id/carouselView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="25dp"
+            app:autoPlay="false"
+            app:fillColor="#FFFFFF"
+            app:strokeColor="#FFFFFF" />
+
+        <TextView
+android:fontFamily="@font/creem_font"
+            android:id="@+id/closeCarouselTxtView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="15dp"
+            android:clickable="true"
+            android:padding="8dp"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/txt_size_16"
+            android:tag="@string/robotomediumFont" />
+    </RelativeLayout>
+
+</RelativeLayout>

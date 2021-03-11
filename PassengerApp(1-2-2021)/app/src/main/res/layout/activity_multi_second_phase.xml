@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            android:id="@+id/toolbar_include"
+            layout="@layout/design_toolbar_general" />
+
+        <!--
+        <include
+            android:id="@+id/toolbar_include"
+            layout="@layout/design_toolbar_multi" />-->
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/contentArea"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/headerArea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include
+                layout="@layout/multi_tab_design_layout"
+                android:visibility="visible" />
+
+        </LinearLayout>
+
+
+        <FrameLayout
+            android:id="@+id/mainContent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible">
+
+            <fragment
+                android:id="@+id/mapV2"
+                android:name="com.fragments.MultiScrollSupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+
+            <FrameLayout
+                android:layout_marginTop="10dp"
+                android:id="@+id/bottomArea"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="bottom|center"
+                android:gravity="bottom|center"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+
+                <LinearLayout
+                    android:id="@+id/innerLayout"
+                    android:layout_gravity="end|bottom|center"
+                    android:gravity="end|bottom|center"
+                    android:orientation="vertical"
+                    android:layout_margin="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:visibility="gone"
+                            android:layout_marginBottom="3dp"
+                            android:layout_gravity="start|center"
+                            android:gravity="start|center"
+                            android:id="@+id/iv_current_loc"
+                            android:src="@mipmap/icon_my_location"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+
+                            <ImageView
+                                android:visibility="gone"
+                                android:layout_marginEnd="15dp"
+                                android:layout_gravity="end|center"
+                                android:gravity="end|center"
+                                android:id="@+id/iv_arrow"
+                                android:src="@mipmap/arrow_sliding_up"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+
+                        </FrameLayout>
+
+                    </FrameLayout>
+
+                    <LinearLayout
+                        android:id="@+id/subLayout"
+                        android:layout_gravity="end|bottom|center"
+                        android:gravity="end|bottom|center"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:background="@drawable/multi_selected_border"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:layout_height="0dp">
+
+                            <androidx.core.widget.NestedScrollView
+                                android:layout_width="match_parent"
+                                android:layout_weight="1"
+                                android:layout_height="0dp"
+                                android:scrollbars="none"
+                                app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                                android:id="@+id/sv_main">
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_margin="5dp"
+                                    android:orientation="vertical">
+
+                                    <androidx.recyclerview.widget.RecyclerView
+                                        android:descendantFocusability="blocksDescendants"
+                                        android:overScrollMode="never"
+                                        android:id="@+id/destRecyclerView"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent">
+
+                                    </androidx.recyclerview.widget.RecyclerView>
+
+
+                                </LinearLayout>
+
+                            </androidx.core.widget.NestedScrollView>
+
+                            <LinearLayout
+                                android:visibility="gone"
+                                android:layout_marginEnd="8dp"
+                                android:gravity="bottom|center|end"
+                                android:id="@+id/addDestinationArea"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom|center|end"
+                                android:orientation="horizontal">
+
+
+                                <TextView
+android:fontFamily="@font/creem_font"
+                                    android:layout_marginEnd="3dp"
+                                    android:id="@+id/addDestinationTitleTxt"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:text="Add Destination"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/add_dest_txt_color"
+                                    android:textSize="14dp"
+                                    android:textStyle="normal"
+                                    android:tag="roboto_light" />
+
+
+                                <FrameLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="end|center"
+                                    android:layout_margin="5dp"
+                                    android:gravity="end|center">
+
+                                    <ImageView
+                                        android:layout_width="22dp"
+                                        android:layout_height="22dp"
+                                        android:src="@mipmap/ic_plus"
+                                        android:tint="@color/add_round_icon_color" />
+
+
+                                    <!-- <ImageView
+                                         android:layout_width="22dp"
+                                         android:layout_height="22dp"
+                                         android:background="@drawable/hcircle"
+                                         android:backgroundTint="@color/add_round_icon_color"
+                                         android:src="@mipmap/ic_pluse"
+                                         android:tint="@color/appThemeColor_TXT_1" />
+-->
+
+                                </FrameLayout>
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_marginTop="10dp"
+                            android:id="@+id/btnArea"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <include
+                                android:id="@+id/nextbtn"
+                                layout="@layout/btn_type_2"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/all_btn_height" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </FrameLayout>
+        </FrameLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

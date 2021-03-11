@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/header"
+            layout="@layout/design_toolbar_general"></include>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:background="@color/appThemeColor_1"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center" />
+
+                <RelativeLayout
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center">
+
+                    <ImageView
+                        android:id="@+id/iconImageView"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center"
+                        android:src="@mipmap/ic_menu_business_profile"
+                        android:tint="@color/white" />
+                </RelativeLayout>
+
+                <TextView
+android:fontFamily="@font/creem_font"
+                    android:id="@+id/statusTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imageView"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="18dp"
+                    android:tag="@string/robotomediumFont" />
+
+
+                <com.view.SelectableRoundedImageView
+                    android:id="@+id/editIconImgView"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_margin="5dp"
+                    android:background="@color/appThemeColor_Dark_1"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/ic_edit"
+                    android:tint="@color/white"
+                    android:visibility="gone"
+                    app:sriv_border_color="@color/appThemeColor_Dark_1"
+                    app:sriv_border_width="2dip"
+                    app:sriv_left_bottom_corner_radius="5dip"
+                    app:sriv_left_top_corner_radius="5dip"
+                    app:sriv_oval="true"
+                    app:sriv_right_bottom_corner_radius="5dip"
+                    app:sriv_right_top_corner_radius="5dip" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <TextView
+android:fontFamily="@font/creem_font"
+            android:id="@+id/selprofilenoteTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:gravity="start|center"
+            android:layout_gravity="start|center"
+            android:padding="5dp"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="@dimen/txt_size_12"
+            android:tag="@string/robotolightFont" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/emailBox"
+                layout="@layout/editbox_form_design"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp" />
+
+            <include
+                android:id="@+id/organizationBox"
+                layout="@layout/editbox_form_design"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp" />
+        </LinearLayout>
+
+
+        <TextView
+android:fontFamily="@font/creem_font"
+            android:id="@+id/noteTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:gravity="start"
+            android:padding="5dp"
+            android:text=""
+            android:textColor="@color/bt_error_red"
+            android:textSize="@dimen/txt_size_12"
+            android:tag="@string/robotolightFont" />
+
+    </LinearLayout>
+
+
+    <include
+        android:id="@+id/btn_type2"
+        layout="@layout/btn_type_2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/all_btn_height"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="-8dp"
+        android:layout_marginStart="-8dp"
+        android:visibility="visible" />
+
+
+    <TextView
+android:fontFamily="@font/creem_font"
+        android:id="@+id/deletebtn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:layout_marginEnd="20dp"
+        android:layout_weight="1"
+        android:background="@drawable/delete_unselected_border"
+        android:gravity="center"
+        android:paddingEnd="15dp"
+        android:paddingStart="15dp"
+        android:singleLine="true"
+        android:textAllCaps="true"
+        android:textColor="@color/bt_error_red"
+        android:textSize="17sp"
+        android:visibility="gone"
+        android:tag="roboto_light" />
+</RelativeLayout>

@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <LinearLayout
+        android:id="@+id/rduTopArea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+
+        android:background="@color/card_shadow"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:visibility="visible">
+
+
+
+        <LinearLayout
+            android:id="@+id/ongoingJobArea"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/iv_job_black"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:clickable="false"
+                android:focusable="false"
+                android:src="@mipmap/ic_job"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/iv_job_green"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:clickable="false"
+                android:focusable="false"
+                android:src="@drawable/job_green"
+                android:visibility="gone" />
+
+            <TextView
+android:fontFamily="@font/creem_font"
+                android:id="@+id/ongoingjobTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:focusable="false"
+                android:maxLines="4"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/txt_size_14" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/profileArea"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_profile_black"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:clickable="false"
+                android:focusable="false"
+                android:src="@mipmap/ic_menu_profile"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/iv_profile_green"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:clickable="false"
+                android:focusable="false"
+                android:src="@drawable/ic_menu_profile_green"
+                android:visibility="gone" />
+
+            <TextView
+android:fontFamily="@font/creem_font"
+                android:id="@+id/profileTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:focusable="false"
+                android:maxLines="4"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/txt_size_14" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/historyArea"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_history_black"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:clickable="false"
+                android:focusable="false"
+                android:src="@mipmap/ic_invoice"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/iv_history_green"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:clickable="false"
+                android:focusable="false"
+                android:src="@drawable/ic_invoice_green"
+                android:visibility="gone" />
+
+            <TextView
+android:fontFamily="@font/creem_font"
+                android:id="@+id/historyTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:focusable="false"
+                android:maxLines="4"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/txt_size_14" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/orderArea"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/iv_order_black"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:clickable="false"
+                android:focusable="false"
+                android:src="@mipmap/ic_menu_order"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/iv_order_green"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:clickable="false"
+                android:focusable="false"
+                android:src="@drawable/order_green"
+                android:visibility="gone" />
+
+            <TextView
+android:fontFamily="@font/creem_font"
+                android:id="@+id/orderTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:focusable="false"
+                android:maxLines="4"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/txt_size_14" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/walletArea"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_wallet_black"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:clickable="false"
+                android:focusable="false"
+                android:src="@mipmap/ic_menu_wallet"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/iv_wallet_green"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:clickable="false"
+                android:focusable="false"
+                android:src="@drawable/green_wallet"
+                android:visibility="gone" />
+
+            <TextView
+android:fontFamily="@font/creem_font"
+                android:id="@+id/walletTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:focusable="false"
+                android:maxLines="4"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/txt_size_14" />
+
+        </LinearLayout>
+
+
+
+
+
+        <LinearLayout
+            android:id="@+id/drawerOpener"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/iv_drawer_opener_black"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:clickable="false"
+                android:focusable="false"
+                android:src="@mipmap/ic_menu_drawer"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/iv_drawer_opener_green"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:clickable="false"
+                android:focusable="false"
+                app:srcCompat="@drawable/ic_menu_green"
+                android:visibility="gone" />
+
+            <TextView
+android:fontFamily="@font/creem_font"
+                android:id="@+id/menuTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:focusable="false"
+                android:maxLines="4"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/txt_size_14" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

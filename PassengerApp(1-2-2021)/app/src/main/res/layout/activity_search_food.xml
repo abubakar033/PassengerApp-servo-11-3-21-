@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/headerview"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/appThemeColor_1"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/searchTxtView"
+                layout="@layout/editbox_form_design"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/search_shape"
+                android:drawableStart="@mipmap/ic_search"
+                android:tag="search"
+                android:padding="5dp"
+                android:paddingEnd="25dp"
+                android:singleLine="true"
+                android:textAlignment="viewStart" />
+
+            <ImageView
+                android:id="@+id/imageCancel"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="-40dp"
+                android:src="@mipmap/ic_cancel_cab_request"
+
+                android:tint="@android:color/black" />
+
+            <com.view.anim.loader.AVLoadingIndicatorView
+                android:id="@+id/loaderView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="-33dp"
+                android:background="@android:color/transparent"
+                android:visibility="gone"
+                app:indicator="BallClipRotate"
+                app:indicator_color="@color/appThemeColor_1" />
+
+            <TextView
+android:fontFamily="@font/creem_font"
+                android:id="@+id/cancelTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:padding="5dp"
+                android:text="Cancel"
+                android:textColor="@color/white"
+                android:textSize="@dimen/txt_size_18"
+                android:tag="roboto_light" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+android:fontFamily="@font/creem_font"
+        android:id="@+id/norecordTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/headerview"
+        android:layout_gravity="center"
+        android:layout_marginStart="20dp"
+        android:padding="5dp"
+
+        android:text="No record found"
+        android:textColor="@color/black"
+        android:textSize="@dimen/txt_size_16"
+        android:visibility="gone"
+        android:tag="roboto_light" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/headerview"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:visibility="visible">
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/foodSearchRecycView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </androidx.recyclerview.widget.RecyclerView>
+    </LinearLayout>
+
+
+    <ImageView
+        android:tint="@color/appThemeColor_1"
+        android:id="@+id/noSearchImage"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerInParent="true"
+        android:visibility="visible"
+        app:srcCompat="@drawable/ic_nosearchresult" />
+
+</RelativeLayout>

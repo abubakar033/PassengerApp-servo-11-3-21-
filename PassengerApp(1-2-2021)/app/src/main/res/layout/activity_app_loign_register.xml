@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_app_loign_register"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sign_up_in_back"
+
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar_include"
+        layout="@layout/design_toolbar_general" />
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/socialarea"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+
+                    android:id="@+id/RegisterText"
+                    style="@style/bt_base_textview_bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/creem_font"
+                    android:gravity="center"
+                    android:tag="roboto_light"
+                    android:text="Register"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/_18ssp" />
+
+
+                <TextView
+                    android:id="@+id/signheaderHint"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/creem_font"
+                    android:gravity="center"
+                    android:tag="roboto_light"
+                    android:text="SIGN IN WITH SOCIAL ACCOUNT"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/txt_size_14" />
+
+
+                <LinearLayout
+
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="19dp"
+                    android:gravity="center"
+
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:id="@+id/imagefacebook"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="@dimen/_30sdp"
+                        android:layout_marginEnd="@dimen/_30sdp"
+                        android:background="@drawable/facebook_btn_back">
+
+                        <TextView
+                            android:id="@+id/continue_fb"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:fontFamily="@font/creem_font"
+                            android:tag="roboto_light"
+                            android:text="Continue With FaceBook"
+                            android:textColor="#fff"
+                            android:textSize="@dimen/txt_size_14" />
+
+                    </RelativeLayout>
+
+
+                    <ImageView
+                        android:id="@+id/imagetwitter"
+                        android:layout_width="50dp"
+
+                        android:layout_height="50dp"
+                        android:layout_marginStart="22dp"
+                        android:layout_marginEnd="22dp"
+                        android:src="@mipmap/twitter"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/imagelinkedin"
+                        android:layout_width="50dp"
+
+                        android:layout_height="50dp"
+                        android:layout_marginStart="22dp"
+                        android:layout_marginEnd="22dp"
+                        android:src="@mipmap/linkedin"
+                        android:visibility="gone" />
+
+
+                    <RelativeLayout
+                        android:id="@+id/imageGoogle"
+                        android:layout_width="match_parent"
+
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="@dimen/_30sdp"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:layout_marginRight="@dimen/_30sdp"
+                        android:background="@drawable/google_btn_back"
+
+                        android:elevation="@dimen/_5sdp">
+
+                        <TextView
+                            android:id="@+id/continue_google"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:fontFamily="@font/creem_font"
+                            android:tag="roboto_light"
+                            android:text="Continue With Google"
+                            android:textColor="#000"
+                            android:textSize="@dimen/txt_size_14"/>
+
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="20dp">
+
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_centerInParent="true"
+                        android:rotation="-45"
+                        android:src="@drawable/greenelips" />
+
+                    <TextView
+                        android:id="@+id/orTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="@font/creem_font"
+                        android:gravity="center"
+                        android:tag="roboto_light"
+                        android:padding="10dp"
+                        android:text="OR"
+                        android:textColor="@color/white"
+                        android:textSize="15sp" />
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></FrameLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

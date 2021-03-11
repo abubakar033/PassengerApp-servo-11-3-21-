@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/radio_main"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+
+        <RadioButton
+            android:buttonTint="@color/appThemeColor_1"
+            android:id="@+id/payment_item"
+            android:text="Method"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:padding="@dimen/_5sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </RadioButton>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

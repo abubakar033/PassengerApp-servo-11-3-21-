@@ -1,0 +1,573 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:orientation="vertical">
+
+
+    <include
+        android:id="@+id/toolbar_include"
+        layout="@layout/design_toolbar_general" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/containerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:id="@+id/scrollView"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:id="@+id/itemContainer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:orientation="vertical" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="#eae8e8"
+                        android:orientation="vertical"
+                        android:padding="15dp"
+                        android:visibility="gone">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+android:fontFamily="@font/creem_font"
+                                android:id="@+id/subtotalHTxt"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:textColor="@color/appThemeColor_1"
+                                android:textSize="@dimen/txt_size_16"
+                                android:tag="@string/robotoRegular" />
+
+                            <TextView
+android:fontFamily="@font/creem_font"
+                                android:id="@+id/subtotalVTxt"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:textAlignment="viewEnd"
+                                android:textColor="@color/appThemeColor_1"
+                                android:textSize="@dimen/txt_size_16"
+                                android:tag="@string/robotoRegular" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="7dp"
+                            android:elevation="2dp"
+                            android:padding="5dp"
+                            android:visibility="gone"
+                            app:cardBackgroundColor="#efefef"
+                            app:cardCornerRadius="5dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:padding="8dp">
+
+                                    <TextView
+android:fontFamily="@font/creem_font"
+                                        android:id="@+id/serviceTxt"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/txt_size_16"
+                                        android:tag="@string/robotobold" />
+
+                                    <TextView
+android:fontFamily="@font/creem_font"
+                                        android:id="@+id/driverNameTxt"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:textAlignment="viewEnd"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/txt_size_16"
+                                        android:tag="@string/robotoRegular" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:padding="8dp">
+
+                                    <TextView
+android:fontFamily="@font/creem_font"
+                                        android:id="@+id/bookDateHTxt"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/txt_size_16"
+                                        android:tag="@string/robotobold" />
+
+                                    <TextView
+android:fontFamily="@font/creem_font"
+                                        android:id="@+id/bookDateVTxt"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:textAlignment="viewEnd"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/txt_size_16"
+                                        android:tag="@string/robotoRegular" />
+                                </LinearLayout>
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:padding="8dp">
+
+                                    <TextView
+android:fontFamily="@font/creem_font"
+                                        android:id="@+id/booktimeHTxt"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/txt_size_16"
+                                        android:tag="@string/robotobold" />
+
+                                    <TextView
+android:fontFamily="@font/creem_font"
+                                        android:id="@+id/booktimeVTxt"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:textAlignment="viewEnd"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/txt_size_16"
+                                        android:tag="@string/robotoRegular" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/couponCodeArea"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="#eeeeee"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center_vertical|start"
+                            android:layout_marginStart="10dp"
+                            android:layout_weight="0"
+                            android:padding="5dp"
+                            android:tint="@color/appThemeColor_1"
+                            app:srcCompat="@drawable/ic_discount" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginEnd="5dp"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical|start"
+                            android:orientation="vertical"
+                            android:padding="5dp">
+
+                            <TextView
+android:fontFamily="@font/creem_font"
+                                android:id="@+id/applyCouponHTxt"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:gravity="center_vertical|start"
+                                android:maxLines="2"
+                                android:text="Apply coupon"
+                                android:textAlignment="viewStart"
+                                android:textAllCaps="true"
+                                android:textColor="#333333"
+                                android:textSize="@dimen/txt_size_16"
+                                android:tag="@string/robotoRegular" />
+
+                            <TextView
+android:fontFamily="@font/creem_font"
+                                android:id="@+id/appliedPromoHTxtView"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical|start"
+                                android:maxLines="1"
+                                android:text="Coupon applied"
+                                android:textAlignment="viewStart"
+                                android:textColor="#333333"
+                                android:textSize="@dimen/txt_size_12"
+                                android:visibility="gone"
+                                android:tag="@string/robotoRegular" />
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/couponCodeImgView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/ic_arrow_right"
+                            android:tint="@color/appThemeColor_1" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/promocodeArea"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <TextView
+android:fontFamily="@font/creem_font"
+                                android:id="@+id/promocodeappliedHTxt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="7dp"
+                                android:textColor="#000000"
+                                android:textSize="@dimen/txt_size_14"
+                                android:tag="@string/robotobold" />
+
+                            <TextView
+android:fontFamily="@font/creem_font"
+                                android:id="@+id/removePromoTxt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="3dp"
+                                android:text=""
+                                android:textColor="#f44040"
+                                android:textSize="@dimen/txt_size_12"
+                                android:tag="@string/robotobold" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            android:visibility="gone">
+
+                            <TextView
+android:fontFamily="@font/creem_font"
+                                android:id="@+id/promocodeappliedVTxt"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="7dp"
+                                android:layout_weight="1"
+                                android:textAlignment="viewEnd"
+                                android:textColor="#000000"
+                                android:textSize="@dimen/txt_size_14"
+                                android:tag="@string/robotobold" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/paymentArea"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/appThemeColor_1"
+                        android:orientation="horizontal"
+                        android:paddingStart="10dp"
+                        android:paddingTop="5dp"
+                        android:paddingEnd="10dp"
+                        android:paddingBottom="5dp">
+
+                        <TextView
+android:fontFamily="@font/creem_font"
+                            android:id="@+id/paymentHTxt"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical|start"
+                            android:maxLines="2"
+                            android:padding="5dp"
+                            android:text=""
+                            android:textAlignment="viewStart"
+                            android:textAllCaps="true"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/txt_size_16"
+                            android:tag="@string/robotoRegular" />
+
+                        <TextView
+android:fontFamily="@font/creem_font"
+                            android:id="@+id/changePaymentTxt"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="0.3"
+                            android:gravity="center_vertical|end"
+                            android:maxLines="2"
+                            android:padding="5dp"
+                            android:text=""
+                            android:textAlignment="viewEnd"
+                            android:textAllCaps="true"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/txt_size_16"
+                            android:tag="@string/robotoRegular" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="10dp">
+
+                        <ImageView
+                            android:id="@+id/payImgView"
+                            android:layout_width="35dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="center"
+                            android:src="@mipmap/ic_cash_new" />
+
+                        <TextView
+android:fontFamily="@font/creem_font"
+                            android:id="@+id/payTypeTxt"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="10dp"
+                            android:gravity="start|center"
+                            android:text="Cash"
+                            android:textAlignment="viewStart"
+                            android:textColor="#2f2f2f"
+                            android:textSize="@dimen/txt_size_14"
+                            android:tag="roboto_light" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/addressArea"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/appThemeColor_1"
+                        android:orientation="horizontal"
+                        android:paddingStart="10dp"
+                        android:paddingTop="5dp"
+                        android:paddingEnd="10dp"
+                        android:paddingBottom="5dp">
+
+                        <TextView
+android:fontFamily="@font/creem_font"
+                            android:id="@+id/locationHTxt"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical|start"
+                            android:maxLines="2"
+                            android:padding="5dp"
+                            android:text=""
+                            android:textAlignment="viewStart"
+                            android:textAllCaps="true"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/txt_size_16"
+                            android:tag="@string/robotoRegular" />
+
+                        <TextView
+android:fontFamily="@font/creem_font"
+                            android:id="@+id/changeLocationTxt"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="0.3"
+                            android:gravity="center_vertical|end"
+                            android:maxLines="2"
+                            android:padding="5dp"
+                            android:text=""
+                            android:textAlignment="viewEnd"
+                            android:textAllCaps="true"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/txt_size_16"
+                            android:tag="@string/robotoRegular" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:orientation="horizontal">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/selLocImage"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="0"
+                            android:tint="@color/appThemeColor_1"
+                            app:srcCompat="@drawable/ic_loc_icon" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginEnd="5dp"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical">
+
+                            <TextView
+android:fontFamily="@font/creem_font"
+                                android:id="@+id/selLocTxt"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="7dp"
+                                android:gravity="center|start"
+                                android:maxLines="2"
+                                android:text=""
+                                android:textAlignment="viewStart"
+                                android:textAllCaps="true"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/txt_size_16"
+                                android:tag="@string/robotoRegular" />
+
+
+                            <TextView
+android:fontFamily="@font/creem_font"
+                                android:id="@+id/userAddressTxt"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginTop="1dp"
+                                android:gravity="center_vertical|start"
+                                android:text=""
+                                android:textAlignment="viewStart"
+                                android:textColor="#808080"
+                                android:textSize="@dimen/txt_size_12"
+                                android:visibility="gone"
+                                android:tag="@string/robotoRegular" />
+                        </LinearLayout>
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/addChangeLocImgView"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="0"
+                            android:src="@mipmap/ic_edit"
+                            android:tint="@color/appThemeColor_1"
+                            android:visibility="gone" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </ScrollView>
+
+            <LinearLayout
+                android:id="@+id/bottombtnarea"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="0"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:id="@+id/btn_type2Area"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <include
+                        android:id="@+id/btn_type2_now"
+                        layout="@layout/btn_type_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/all_btn_height"
+                        android:layout_gravity="bottom" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/reschedulearea"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:visibility="visible">
+
+                    <include
+                        android:id="@+id/btn_type_later"
+                        layout="@layout/btn_type_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/all_btn_height"
+                        android:layout_gravity="bottom"
+                        android:layout_marginStart="5dp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <ProgressBar
+            android:id="@+id/mProgressBar"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

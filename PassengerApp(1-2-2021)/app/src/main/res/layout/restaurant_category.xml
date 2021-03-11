@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/_50sdp"
+    android:layout_height="@dimen/_75sdp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/iv_category"
+        android:layout_width="@dimen/_45sdp"
+        android:layout_height="@dimen/_45sdp"
+        app:civ_border_width="@dimen/_1sdp"
+        app:civ_border_color="@color/Gray"
+        android:layout_centerHorizontal="true"
+        android:padding="@dimen/_2sdp"
+        android:layout_gravity="center"
+        android:src="@drawable/restaur" />
+
+    <TextView
+        android:fontFamily="@font/creem_font"
+        android:id="@+id/tv_rest_category"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/iv_category"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:layout_above="@+id/myvi"
+        android:text="All"
+        android:maxLines="2"
+        android:padding="@dimen/_1sdp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_10sdp" />
+
+    <RelativeLayout
+        android:id="@+id/myvi"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"
+        android:background="@color/green"
+        android:layout_height="@dimen/_1sdp"/>
+
+</RelativeLayout>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/mainSelectionArea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:padding="5dp">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|center"
+            android:gravity="end|center"
+            android:paddingEnd="4dp">
+
+
+            <ImageView
+                android:id="@+id/iv_round"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:src="@drawable/hcircle"
+                android:tint="@color/to_round_icon_color" />
+
+            <TextView
+android:fontFamily="@font/creem_font"
+                android:id="@+id/toTitleTxt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="To"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="@color/appThemeColor_TXT_1"
+                android:textSize="9dp" />
+
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/multi_address_border">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+android:fontFamily="@font/creem_font"
+                    android:id="@+id/toValueTxt"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start|center"
+                    android:gravity="start|center"
+                    android:tag="Input Address Or Source Pin"
+                    android:padding="5dp"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textAlignment="viewStart"
+                    android:textColor="#757575"
+                    android:textSize="@dimen/txt_size_12"
+                    android:textStyle="italic" />
+
+                <LinearLayout
+                    android:id="@+id/removeAdd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <FrameLayout
+                        android:visibility="visible"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="end|center"
+                        android:layout_margin="5dp"
+                        android:gravity="end|center">
+
+
+                        <ImageView
+                            android:layout_width="18dp"
+                            android:layout_height="18dp"
+                            android:layout_gravity="center"
+                            android:src="@mipmap/ic_minus"
+                            android:tint="@color/add_round_icon_color" />
+
+                        <TextView
+android:fontFamily="@font/creem_font"
+                            android:visibility="gone"
+                            android:id="@+id/dashTitleTxt"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="-"
+                            android:textAlignment="center"
+                            android:textAllCaps="true"
+                            android:textColor="@color/appThemeColor_TXT_1"
+                            android:textSize="15dp" />
+
+
+                    </FrameLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

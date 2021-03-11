@@ -1,0 +1,143 @@
+{
+  "project_info": {
+    "project_number": "365326394312",
+    "firebase_url": "https://inner-topic-253212.firebaseio.com",
+    "project_id": "inner-topic-253212",
+    "storage_bucket": "inner-topic-253212.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:365326394312:android:47cf122e5e77ef9ba756fd",
+        "android_client_info": {
+          "package_name": "com.servo.partner"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "365326394312-kq3oqj3ikd1mr14n9ku78s50gj3m40jt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.servo.partner",
+            "certificate_hash": "09162e62458fd9d838ce4c3ff3708e5f47d7597a"
+          }
+        },
+        {
+          "client_id": "365326394312-467vee0e589eosc7jmavn24hsbqc3ogp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCKeGxDU0-kiIIeC3OamP_sFhxJLWLZ_js"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "365326394312-467vee0e589eosc7jmavn24hsbqc3ogp.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "365326394312-spg9t80trqlad3a5tob79efpeikbdn70.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.servo.user"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:365326394312:android:dfd19eca57b0bdc4a756fd",
+        "android_client_info": {
+          "package_name": "com.servo.store"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "365326394312-gbkkka1hltdf96rjpvfa118u15h256dc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.servo.store",
+            "certificate_hash": "09162e62458fd9d838ce4c3ff3708e5f47d7597a"
+          }
+        },
+        {
+          "client_id": "365326394312-467vee0e589eosc7jmavn24hsbqc3ogp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCKeGxDU0-kiIIeC3OamP_sFhxJLWLZ_js"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "365326394312-467vee0e589eosc7jmavn24hsbqc3ogp.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "365326394312-spg9t80trqlad3a5tob79efpeikbdn70.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.servo.user"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:365326394312:android:572e43c9cd133719a756fd",
+        "android_client_info": {
+          "package_name": "com.servo.user"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "365326394312-cqo0gkj2csmssod4g7lt7elsj92fb54e.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.servo.user",
+            "certificate_hash": "09162e62458fd9d838ce4c3ff3708e5f47d7597a"
+          }
+        },
+        {
+          "client_id": "365326394312-467vee0e589eosc7jmavn24hsbqc3ogp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCKeGxDU0-kiIIeC3OamP_sFhxJLWLZ_js"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "365326394312-467vee0e589eosc7jmavn24hsbqc3ogp.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "365326394312-spg9t80trqlad3a5tob79efpeikbdn70.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.servo.user"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

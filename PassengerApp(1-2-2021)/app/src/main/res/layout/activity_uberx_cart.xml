@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".UberxCartActivity">
+
+    <include
+        android:id="@+id/toolbar_include"
+        layout="@layout/design_toolbar_general" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnArea"
+        android:layout_below="@+id/toolbar_include">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+android:fontFamily="@font/creem_font"
+                android:id="@+id/headingTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:gravity="start|center_vertical"
+                android:padding="5dp"
+                android:textAlignment="viewStart"
+                android:textColor="@color/appThemeColor_1"
+                android:textSize="@dimen/txt_size_16"
+                android:tag="@string/robotomediumFont" />
+
+            <TextView
+android:fontFamily="@font/creem_font"
+                android:id="@+id/descTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:ellipsize="end"
+                android:gravity="start|center_vertical"
+                android:padding="5dp"
+                android:textAlignment="viewStart"
+                android:textColor="#646464"
+                android:textSize="@dimen/txt_size_12" />
+
+
+            <LinearLayout
+                android:id="@+id/commentarea"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/promoArea"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+android:fontFamily="@font/creem_font"
+                    android:id="@+id/commentHname"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="start|center"
+                    android:paddingStart="5dp"
+                    android:text=""
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/appThemeColor_1"
+                    android:textSize="@dimen/txt_size_16"
+                    android:tag="@string/robotobold" />
+
+                <include
+                    android:id="@+id/commentBox"
+                    layout="@layout/editbox_form_design"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/qtyArea"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/appThemeColor_1"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+android:fontFamily="@font/creem_font"
+                        android:id="@+id/quantityTxtView"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/all_TxtView_height"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@color/mdtp_white"
+                        android:gravity="start|center"
+                        android:paddingStart="10dp"
+                        android:text="Quantity"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/txt_size_16"
+                        android:textStyle="normal"
+                        android:visibility="gone" />
+
+                    <LinearLayout
+                        android:id="@+id/countingArea"
+                        android:layout_width="wrap_content"
+                        android:layout_height="45dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:visibility="visible">
+
+                        <LinearLayout
+                            android:id="@+id/minusarea"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="5dp">
+
+                            <ImageView
+                                android:id="@+id/minusImgView"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="10dp"
+                                android:clickable="false"
+                                android:gravity="center"
+                                app:srcCompat="@drawable/ic_minus_cart" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="35dp"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginEnd="20dp"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+android:fontFamily="@font/creem_font"
+                                android:id="@+id/QTYNumberTxtView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:text="1"
+                                android:textColor="@color/appThemeColor_TXT_1"
+                                android:textSize="@dimen/txt_size_18"
+                                android:tag="@string/robotobold" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/addarea"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="5dp">
+
+                            <ImageView
+                                android:id="@+id/addImgView"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:layout_gravity="center"
+                                android:layout_marginEnd="10dp"
+                                android:clickable="false"
+                                android:gravity="center"
+                                app:srcCompat="@drawable/ic_plus_cart" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <TextView
+android:fontFamily="@font/creem_font"
+                android:id="@+id/removeCartTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:gravity="start|center_vertical"
+                android:padding="5dp"
+                android:textAlignment="center"
+                android:textColor="@color/red"
+                android:textSize="@dimen/txt_size_16"
+                android:visibility="gone"
+                android:tag="@string/robotomediumFont" />
+
+
+            <LinearLayout
+                android:id="@+id/fareDetailDisplayArea"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/btnArea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:visibility="visible">
+
+        <include
+
+            android:id="@+id/btn_type2"
+            layout="@layout/btn_type_2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/all_btn_height"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="15dp" />
+    </LinearLayout>
+
+</RelativeLayout>
